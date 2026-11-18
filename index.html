@@ -311,53 +311,50 @@ footer{display:flex;justify-content:space-between;align-items:center;color:rgba(
 
 <script>
 const ROUNDS = [
-  {emo:"🪔", title:"Festival of Lights", blurb:"Diwali basics, no homework required"},
-  {emo:"🦃", title:"Gobble Gobble", blurb:"Thanksgiving, from Plymouth to the parade"},
-  {emo:"🍰", title:"Feast Mode", blurb:"sweets, harvests & a few surprises"}
+  {emo:"🎉", title:"Warm-Up", blurb:"one easy bite from each festival"},
+  {emo:"🌏", title:"Around the World", blurb:"lunar calendars, fireworks & shopping sprees"},
+  {emo:"🍰", title:"Feast & Finale", blurb:"pies, sweets, gifts & the big finish"}
 ];
 const QUESTIONS = [
- // Round 1
- {r:0, e:"✨", q:"Diwali is famously known as the Festival of...", a:["Lights","Kites","Colors","Lanterns"], k:1, t:20,
+ {r:0, g:"d", e:"✨", q:"Diwali is famously known as the Festival of...", a:["Lights","Kites","Colors","Lanterns"], k:1, t:20,
   f:"Families light lamps, candles, and fairy lights everywhere. Fun cousins: Holi is India's Festival of Colors, and the Lantern Festival closes out Chinese New Year."},
- {r:0, e:"🪔", q:"What is a 'diya'?", a:["A small clay oil lamp","A sweet dessert","A folk dance","A drum"], k:1, t:20,
-  f:"Diyas are little clay cups filled with oil or ghee and a cotton wick. Rows of them glow on doorsteps, windows, and rooftops on Diwali night."},
- {r:0, e:"🌙", tf:true, q:"Diwali falls on the same date every year.", a:["True","False"], k:2, t:20,
-  f:"False! Diwali follows the lunar calendar, just like Chinese New Year, so it moves around. It lands on a new-moon night in October or November."},
- {r:0, e:"🎆", q:"Diwali nights are full of fireworks. Which country invented fireworks?", a:["India","China","USA","Italy"], k:2, t:20,
-  f:"China! Chinese inventors created gunpowder over a thousand years ago, and firecrackers were used to scare away evil spirits, a tradition still loved at Lunar New Year."},
- {r:0, e:"🎨", q:"Rangoli are colorful patterns at the front door. What are they usually made from?", a:["Colored powder, rice, or flowers","Oil paint on canvas","Chalk on the walls","LEGO bricks"], k:1, t:20,
-  f:"Rangoli designs are drawn on the floor by hand to welcome guests and good luck. Some families stay up late making giant ones together."},
- {r:0, e:"🎁", q:"What's the most classic gift people exchange during Diwali?", a:["Pumpkins","Red envelopes","Boxes of sweets","Chocolate eggs"], k:3, t:20,
-  f:"Boxes of 'mithai' (Indian sweets) get passed between friends, neighbors, and coworkers. Red envelopes with money are the Lunar New Year version!"},
- {r:0, e:"🌗", q:"At its heart, Diwali celebrates the victory of...", a:["Summer over winter","Light over darkness","The sea over the land","Cats over dogs"], k:2, t:20,
-  f:"Light over darkness, and good over evil. That's why everything is lit up: every lamp is a tiny vote for hope."},
- // Round 2
- {r:1, e:"🍗", q:"What's the star of most American Thanksgiving dinners?", a:["Ham","Lobster","Pizza","Turkey"], k:4, t:20,
+ {r:0, g:"t", e:"🍗", q:"What's the star of most American Thanksgiving dinners?", a:["Ham","Lobster","Pizza","Turkey"], k:4, t:20,
   f:"Americans eat tens of millions of turkeys every Thanksgiving. That's why many people simply call it 'Turkey Day.'"},
- {r:1, e:"🍁", tf:true, q:"Canada celebrates Thanksgiving too, but in October.", a:["True","False"], k:1, t:20,
-  f:"True! Canadian Thanksgiving is the second Monday in October. The harvest comes earlier up north, so the party does too."},
- {r:1, e:"🔊", q:"What sound does a turkey make?", a:["Quack quack","Gobble gobble","Moo","Hoot hoot"], k:2, t:20,
+ {r:0, g:"d", e:"🪔", q:"What is a 'diya'?", a:["A small clay oil lamp","A sweet dessert","A folk dance","A drum"], k:1, t:20,
+  f:"Diyas are little clay cups filled with oil or ghee and a cotton wick. Rows of them glow on doorsteps, windows, and rooftops on Diwali night."},
+ {r:0, g:"t", e:"🔊", q:"What sound does a turkey make?", a:["Quack quack","Gobble gobble","Moo","Hoot hoot"], k:2, t:20,
   f:"Only male turkeys (called 'toms') gobble, and they can be heard up to a mile away. Female turkeys cluck and purr instead."},
- {r:1, e:"🏛️", q:"Every year, one lucky turkey at the White House gets...", a:["A presidential pardon","A trip to Canada","Its own cooking show","A statue"], k:1, t:20,
-  f:"The pardoned turkey skips dinner and retires to a farm. President George H. W. Bush made the pardon an official tradition in 1989."},
- {r:1, e:"🎈", q:"What famous New York event happens on Thanksgiving morning?", a:["The ball drop","The Met Gala","The Macy's parade","The NYC Marathon"], k:3, t:20,
-  f:"The Macy's Thanksgiving Day Parade started in 1924, and the giant character balloons joined in 1927. Millions watch it on TV every year."},
- {r:1, e:"🛍️", q:"The day after Thanksgiving, famous for huge shopping deals, is called...", a:["Cyber Monday","Black Friday","Singles' Day","Boxing Day"], k:2, t:20,
+ {r:0, g:"d", e:"🎨", q:"Rangoli are colorful patterns at the front door. What are they usually made from?", a:["Colored powder, rice, or flowers","Oil paint on canvas","Chalk on the walls","LEGO bricks"], k:1, t:20,
+  f:"Rangoli designs are drawn on the floor by hand to welcome guests and good luck. Some families stay up late making giant ones together."},
+ {r:0, g:"t", e:"🍁", tf:true, q:"Canada celebrates Thanksgiving too, but in October.", a:["True","False"], k:1, t:20,
+  f:"True! Canadian Thanksgiving is the second Monday in October. The harvest comes earlier up north, so the party does too."},
+ {r:0, g:"d", e:"🌗", q:"At its heart, Diwali celebrates the victory of...", a:["Summer over winter","Light over darkness","The sea over the land","Cats over dogs"], k:2, t:20,
+  f:"Light over darkness, and good over evil. That's why everything is lit up: every lamp is a tiny vote for hope."},
+ {r:1, g:"d", e:"🌙", tf:true, q:"Diwali falls on the same date every year.", a:["True","False"], k:2, t:20,
+  f:"False! Diwali follows the lunar calendar, just like Chinese New Year, so it moves around. It lands on a new-moon night in October or November."},
+ {r:1, g:"t", e:"🛍️", q:"The day after Thanksgiving, famous for huge shopping deals, is called...", a:["Cyber Monday","Black Friday","Singles' Day","Boxing Day"], k:2, t:20,
   f:"Black Friday kicks off holiday shopping in the US. Fun twist: China's Singles' Day on Nov 11 is the biggest shopping day in the world, and Boxing Day is Canada's big sale day."},
- {r:1, e:"🦴", q:"After dinner, two people pull this apart to make a wish. What is it?", a:["A drumstick","A fortune cookie","The wishbone","A cracker"], k:3, t:20,
-  f:"Whoever ends up with the bigger piece gets their wish. Bonus fact: fortune cookies were popularized in California, not China!"},
- // Round 3
- {r:2, e:"🥧", q:"Which pie is the classic Thanksgiving dessert?", a:["Key lime","Blueberry","Lemon meringue","Pumpkin"], k:4, t:20,
-  f:"Pumpkin pie is the classic, and pecan and apple are close runners-up. Pumpkins are native to North America, so they've been on harvest tables for a very long time."},
- {r:2, e:"🍬", q:"Which one of these is a Diwali sweet?", a:["Mooncake","Gulab jamun","Pumpkin pie","Maple taffy"], k:2, t:20,
-  f:"Gulab jamun are soft fried milk-dough balls soaked in rose and cardamom syrup. Mooncakes belong to China's Mid-Autumn Festival, and maple taffy is a Canadian treat."},
- {r:2, e:"🌾", q:"Thanksgiving and China's Mid-Autumn Festival both celebrate...", a:["The new year","The harvest","The first snow","Spring"], k:2, t:20,
+ {r:1, g:"b", e:"🎆", q:"Diwali nights are full of fireworks. Which country invented fireworks?", a:["India","China","USA","Italy"], k:2, t:20,
+  f:"China! Chinese inventors created gunpowder over a thousand years ago, and firecrackers were used to scare away evil spirits, a tradition still loved at Lunar New Year."},
+ {r:1, g:"t", e:"🎈", q:"What famous New York event happens on Thanksgiving morning?", a:["The ball drop","The Met Gala","The Macy's parade","The NYC Marathon"], k:3, t:20,
+  f:"The Macy's Thanksgiving Day Parade started in 1924, and the giant character balloons joined in 1927. Millions watch it on TV every year."},
+ {r:1, g:"t", e:"🏛️", q:"Every year, one lucky turkey at the White House gets...", a:["A presidential pardon","A trip to Canada","Its own cooking show","A statue"], k:1, t:20,
+  f:"The pardoned turkey skips dinner and retires to a farm. President George H. W. Bush made the pardon an official tradition in 1989."},
+ {r:1, g:"b", e:"🌾", q:"Thanksgiving and China's Mid-Autumn Festival both celebrate...", a:["The new year","The harvest","The first snow","Spring"], k:2, t:20,
   f:"Both are harvest festivals about family and gratitude. Mid-Autumn families gather under the full moon with mooncakes; Thanksgiving families gather around the turkey."},
- {r:2, e:"🥫", q:"In many US homes, cranberry sauce shows up on the table...", a:["In a teapot","As ice cream","Still shaped like the can","Inside a pie"], k:3, t:20,
-  f:"Jellied cranberry sauce slides out of the can in one piece, ridges and all. People argue about it every year, and that's part of the fun."},
- {r:2, e:"🌏", tf:true, q:"Diwali is celebrated only in India.", a:["True","False"], k:2, t:20,
+ {r:1, g:"d", e:"🌏", tf:true, q:"Diwali is celebrated only in India.", a:["True","False"], k:2, t:20,
   f:"False! It's a public holiday in countries like Nepal, Singapore, Malaysia, Mauritius, and Fiji, and there are big celebrations across the US, Canada, and the UK."},
- {r:2, e:"🧮", q:"This year Diwali was Nov 8 and Thanksgiving is Nov 26. How many days apart are they?", a:["8","12","18","26"], k:3, t:30, dbl:true,
+ {r:2, g:"t", e:"🦴", q:"After dinner, two people pull this apart to make a wish. What is it?", a:["A drumstick","A fortune cookie","The wishbone","A cracker"], k:3, t:20,
+  f:"Whoever ends up with the bigger piece gets their wish. Bonus fact: fortune cookies were popularized in California, not China!"},
+ {r:2, g:"d", e:"🍬", q:"Which one of these is a Diwali sweet?", a:["Mooncake","Gulab jamun","Pumpkin pie","Maple taffy"], k:2, t:20,
+  f:"Gulab jamun are soft fried milk-dough balls soaked in rose and cardamom syrup. Mooncakes belong to China's Mid-Autumn Festival, and maple taffy is a Canadian treat."},
+ {r:2, g:"t", e:"🥧", q:"Which pie is the classic Thanksgiving dessert?", a:["Key lime","Blueberry","Lemon meringue","Pumpkin"], k:4, t:20,
+  f:"Pumpkin pie is the classic, and pecan and apple are close runners-up. Pumpkins are native to North America, so they've been on harvest tables for a very long time."},
+ {r:2, g:"d", e:"🎁", q:"What's the most classic gift people exchange during Diwali?", a:["Pumpkins","Red envelopes","Boxes of sweets","Chocolate eggs"], k:3, t:20,
+  f:"Boxes of 'mithai' (Indian sweets) get passed between friends, neighbors, and coworkers. Red envelopes with money are the Lunar New Year version!"},
+ {r:2, g:"t", e:"🥫", q:"In many US homes, cranberry sauce shows up on the table...", a:["In a teapot","As ice cream","Still shaped like the can","Inside a pie"], k:3, t:20,
+  f:"Jellied cranberry sauce slides out of the can in one piece, ridges and all. People argue about it every year, and that's part of the fun."},
+ {r:2, g:"b", e:"🧮", q:"This year Diwali was Nov 8 and Thanksgiving is Nov 26. How many days apart are they?", a:["8","12","18","26"], k:3, t:30, dbl:true,
   f:"18 days! Two festivals of light and gratitude in one month. Happy Diwali and Happy Thanksgiving, everyone!"}
 ];
 const SHAPES = [
@@ -411,7 +408,7 @@ function countdown(done){ phase="countdown"; const C=$("count"); C.classList.add
     C.innerHTML=""; const s=document.createElement("span"); s.textContent=seq[i]; if(seq[i]==="Go!") s.className="go"; C.append(s);
     tone(seq[i]==="Go!"?1047:523,seq[i]==="Go!"?.35:.15,"triangle",.11); i++; setTimeout(step,seq[i-1]==="Go!"?650:750); })(); }
 function stamp(text){ const s=document.createElement("div"); s.className="stamp"; s.textContent=text; document.body.append(s); setTimeout(()=>s.remove(),1700); }
-function walker(emo,label){ const w=document.createElement("div"); w.className="walker"; w.innerHTML='<span></span>'+(label?'<small></small>':'');
+function walker(emo,label){ if(document.querySelector(".walker")) return; const w=document.createElement("div"); w.className="walker"; w.innerHTML='<span></span>'+(label?'<small></small>':'');
   w.querySelector("span").textContent=emo; if(label) w.querySelector("small").textContent=label; document.body.append(w); setTimeout(()=>w.remove(),10200); }
 function emojiPop(el){ const r=el.getBoundingClientRect(); const E=["🪔","🦃","✨","🎉","🥧","🍂"];
   for(let i=0;i<7;i++){ const f=document.createElement("span"); f.className="floatemo"; f.textContent=E[Math.floor(Math.random()*E.length)];
@@ -427,7 +424,7 @@ function showRound(r){ phase="round"; const R=ROUNDS[r]; show("s-round");
   if(r===1) setTimeout(()=>walker("🦃","gobble gobble!"),600); }
 $("rGo").onclick=()=>next();
 function showQuestion(){ phase="question"; paused=false; marks=new Set(); const Q=QUESTIONS[idx]; show("s-q");
-  const R=ROUNDS[Q.r]; $("badge").textContent=R.emo+" Round "+(Q.r+1)+": "+R.title;
+  const R=ROUNDS[Q.r]; $("badge").textContent=R.emo+" Round "+(Q.r+1)+": "+R.title+"   ·   "+({d:"🪔 Diwali",t:"🦃 Thanksgiving",b:"🌏 Both"}[Q.g]);
   $("qn").textContent=idx+1; $("qt").textContent=QUESTIONS.length; $("dbl").innerHTML=Q.dbl?'<span class="double">2× points</span>':"";
   $("emo").textContent=Q.e; $("qtext").innerHTML=(Q.tf?'<span class="tf">True or False?</span><br>':''); Q.q.split(" ").forEach((w,i)=>{ const s=document.createElement("span"); s.className="w"; s.textContent=w; s.style.animationDelay=(i*.045)+"s"; $("qtext").append(s,document.createTextNode(" ")); });
   timedOut=false;
